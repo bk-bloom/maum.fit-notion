@@ -4,11 +4,11 @@ import axios from "axios";
 import 'react-notion/src/styles.css';
 import { NotionRenderer } from "react-notion";
 
-export default function App() {
+export default function Announecement() {
   const [response, setResponse] = useState({});
 
   useEffect(() => {
-    const NOTION_PAGE_ID = 'fcec50ca96c5414c9348622112f3208d';
+    const NOTION_PAGE_ID = process.env.REACT_APP_NOTION_ANNOUNCEMENT;
     axios
       .get(`https://notion-api.splitbee.io/v1/page/${NOTION_PAGE_ID}`)
       .then(({ data }) => {
@@ -23,11 +23,11 @@ export default function App() {
         a: ({ decoratorValue, children }) => {
             console.log(decoratorValue);
             return (
-          <a href={`${process.env.REACT_APP_BASENAME}${decoratorValue}`} style={{color: "#37352F"}}>
+          <a href={`${process.env.REACT_APP_BASENAME}${decoratorValue}`} style={{color: "inherit", opacity:0.7}}>
             {children}
           </a>
         )}
-      }} />
+      }} /> 
     ) : null
   );
 }

@@ -1,17 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Announecement from './Announcement';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import RecommendCourse1 from './RecommendCourse1';
+import RecommendCourse2 from './RecommendCourse2';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename='/maum.fit-notion'>
+    <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="fcec50ca96c5414c9348622112f3208d" element={<App />} />
+        <Route path={`/${process.env.REACT_APP_NOTION_ANNOUNCEMENT}`} element={<Announecement />} />
+        <Route path="3b1d264eb83741cead6ae25d50f1b3f7" element={<RecommendCourse1 />} />
+        <Route path={`${process.env.REACT_APP_NOTION_RECOMMENDED_2}`} element={<RecommendCourse2 />} />
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
