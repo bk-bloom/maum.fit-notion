@@ -10,7 +10,7 @@ import RecommendCourse2 from './RecommendCourse2';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename='/maum.fit-notion'>
+    <BrowserRouter>
     <Routes>
         <Route path="/" element={<App />} />
         <Route path="fcec50ca96c5414c9348622112f3208d" element={<App />} />
