@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bk-bloom/maum.fit-notion/static/css/main.bda7210b.css",
+    "main.js": "/bk-bloom/maum.fit-notion/static/js/main.4ae66d83.js",
+    "index.html": "/bk-bloom/maum.fit-notion/index.html",
+    "main.bda7210b.css.map": "/bk-bloom/maum.fit-notion/static/css/main.bda7210b.css.map",
+    "main.4ae66d83.js.map": "/bk-bloom/maum.fit-notion/static/js/main.4ae66d83.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bda7210b.css",
+    "static/js/main.4ae66d83.js"
+  ]
+}
