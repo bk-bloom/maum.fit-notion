@@ -19,15 +19,7 @@ export default function App() {
 
   return (
     Object.keys(response).length ? (
-      <NotionRenderer blockMap={response} fullPage={true} customDecoratorComponents={{
-        a: ({ decoratorValue, children }) => {
-            console.log(decoratorValue);
-            return (
-          <a href={`${process.env.REACT_APP_BASENAME}${decoratorValue}`} style={{color: "#37352F"}}>
-            {children}
-          </a>
-        )}
-      }} />
+      <NotionRenderer blockMap={response} fullPage={true} />
     ) : null
   );
 }
