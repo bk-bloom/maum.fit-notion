@@ -14,7 +14,7 @@ export default function NotionPage({id}) {
         console.log(data);
         setResponse(data);
       });
-  }, []);
+  }, [id]);
 
   return (
     Object.keys(response).length ? (
