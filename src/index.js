@@ -21,6 +21,10 @@ root.render(
         <Route path={`/${process.env.REACT_APP_NOTION_RECOMMENDED_7}`} element={<NotionPage id={process.env.REACT_APP_NOTION_RECOMMENDED_7} />} />
         <Route path={`/${process.env.REACT_APP_NOTION_RECOMMENDED_8}`} element={<NotionPage id={process.env.REACT_APP_NOTION_RECOMMENDED_8} />} />
         <Route path={`/${process.env.REACT_APP_NOTION_RECOMMENDED_9}`} element={<NotionPage id={process.env.REACT_APP_NOTION_RECOMMENDED_9} />} />
+        <Route path={`/${process.env.REACT_APP_NOTION_ABOUT}`} element={<NotionPage id={process.env.REACT_APP_NOTION_ABOUT} />} />
+        <Route path={`/${process.env.REACT_APP_NOTION_ABOUT_CHECKUP}`} element={<NotionPage id={process.env.REACT_APP_NOTION_ABOUT_CHECKUP} />} />
+        <Route path={`/${process.env.REACT_APP_NOTION_ABOUT_SELF_TRAINING}`} element={<NotionPage id={process.env.REACT_APP_NOTION_ABOUT_SELF_TRAINING} />} />
+        <Route path={`/${process.env.REACT_APP_NOTION_ABOUT_GROUP_TRAINING}`} element={<NotionPage id={process.env.REACT_APP_NOTION_ABOUT_GROUP_TRAINING} />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
