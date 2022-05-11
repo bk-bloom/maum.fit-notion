@@ -13,10 +13,10 @@ root.render(
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<App />} />
-        <Route path="fcec50ca96c5414c9348622112f3208d" element={<App />} />
+        <Route path="/fcec50ca96c5414c9348622112f3208d" element={<App />} />
         <Route path={`/${process.env.REACT_APP_NOTION_ANNOUNCEMENT}`} element={<Announecement />} />
-        <Route path="3b1d264eb83741cead6ae25d50f1b3f7" element={<RecommendCourse1 />} />
-        <Route path={`${process.env.REACT_APP_NOTION_RECOMMENDED_2}`} element={<RecommendCourse2 />} />
+        <Route path="/3b1d264eb83741cead6ae25d50f1b3f7" element={<RecommendCourse1 />} />
+        <Route path={`/${process.env.REACT_APP_NOTION_RECOMMENDED_2}`} element={<RecommendCourse2 />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
